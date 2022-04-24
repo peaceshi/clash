@@ -1,0 +1,1 @@
+Start-Process powershell -WindowStyle Hidden -Verb runAs -ArgumentList "Get-Process -Name 'clash-windows-amd64-v3' | Stop-Process -PassThru"

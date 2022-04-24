@@ -1,0 +1,1 @@
+Start-Process .\bin\clash-windows-amd64-v3.exe -Verb runAs -WindowStyle Hidden
