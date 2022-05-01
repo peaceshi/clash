@@ -1,2 +1,2 @@
 @echo off
-powershell ./stop.ps1
+start /min powershell ./stop.ps1
