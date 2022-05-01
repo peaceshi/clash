@@ -6,6 +6,8 @@ hosts:
   # '*.clash.dev': 127.0.0.1
   # '.dev': 127.0.0.1
   # 'alpha.clash.dev': '::1'
+interface-name: "以太网" # interface name at Windows control panel
+# interface-name: "WLAN" # interface name at Windows control panel
 tun:
   enable: true
   stack: system
@@ -13,7 +15,6 @@ tun:
   auto-detect-interface: true
   dns-hijack:
     - any:53
-interface-name: "以太网" # interface name at Windows control panel
 dns:
   enable: true
   listen: 0.0.0.0:5301
@@ -254,6 +255,8 @@ rule-providers:
     path: ./ruleset/applications.yaml
     interval: 86400
 rules:
+  # http://www.msftconnecttest.com/connecttest.txt
+  - DOMAIN-SUFFIX,msftconnecttest.com,♻️ 自动选择
   - RULE-SET,直连域名列表,🎯 全球直连
   - RULE-SET,applications,🎯 全球直连
   - RULE-SET,专用域名列表,🎯 全球直连
